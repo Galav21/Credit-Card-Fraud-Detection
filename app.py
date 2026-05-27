@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load trained model
-model = joblib.load("models/credit_card_fraud_model.pkl")
+model = joblib.load("credit_card_fraud_model.pkl")
 
 
 @app.route('/')
