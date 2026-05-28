@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fraud Shield</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🛡 AI Fraud Shield</h1>
+        <p>Real-Time Credit Card Fraud Detection System</p>
+    </div>
+
+    <form action="/predict" method="POST">
+
+        <div class="grid">
+
+            {% for i in range(30) %}
+            <input type="number"
+            step="any"
+            name="feature{{i}}"
+            placeholder="Feature {{i+1}}"
+            required>
+            {% endfor %}
+
+        </div>
+
+        <button type="submit">
+            Detect Fraud
+        </button>
+
+    </form>
+
+    {% if prediction %}
+
+    <div class="result
+    {% if 'Fraud' in prediction %}
+    fraud
+    {% else %}
+    safe
+    {% endif %}">
+
+        <h2>{{ prediction }}</h2>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
