@@ -1,205 +1,210 @@
-<!DO<title>AI Fraud Shield</title>
+<!DOCTYPE html>
+<html lang="en">
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='Css/style.css') }}">
-    <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+    <title>🛡 AI Fraud Shield</title>
 
-        body{
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:30px;
-        }
-
-        .container{
-            background:white;
-            width:90%;
-            max-width:1000px;
-            border-radius:20px;
-            padding:40px;
-            box-shadow:0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        h1{
-            text-align:center;
-            color:#1e3c72;
-            margin-bottom:10px;
-        }
-
-        p{
-            text-align:center;
-            color:gray;
-            margin-bottom:30px;
-        }
-
-        .grid{
-            display:grid;
-            grid-template-columns: repeat(2,1fr);
-            gap:15px;
-        }
-
-        input{
-            padding:12px;
-            border:1px solid #ddd;
-            border-radius:10px;
-            outline:none;
-            font-size:14px;
-        }
-
-        input:focus{
-            border-color:#2a5298;
-        }
-
-        .btn{
-            width:100%;
-            margin-top:25px;
-            padding:15px;
-            border:none;
-            border-radius:10px;
-            background: linear-gradient(135deg,#1e3c72,#2a5298);
-            color:white;
-            font-size:18px;
-            cursor:pointer;
-            transition:0.3s;
-        }
-
-        .btn:hover{
-            background:#1e3c72;
-        }
-
-        .result-card{
-               margin-top:30px;
-               padding:20px;
-               border-radius:15px;
-               text-align:center;
-               font-size:24px;
-               font-weight:bold;
-               background:#f5f5f5;
-               box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-    </style>
->>>>>>> cd408b816c5053fdd2338cb63fa69678ba308022
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='Css/style.css') }}">
 </head>
 
 <body>
 
-<<<<<<< HEAD
-<div class="background"></div>
+    <div class="container">
 
-<div class="container">
+        <div class="header">
+            <h1>🛡 AI Fraud Shield</h1>
 
-    <div class="header">
-        <h1>🛡 AI Fraud Shield</h1>
-        <p>Real-Time Credit Card Fraud Detection System</p>
-    </div>
+            <p>
+                Real-Time Credit Card Fraud Detection
+            </p>
+        </div>
 
-    <form action="/predict" method="POST">
+        <form action="/predict" method="POST">
 
-        <div class="grid">
+            <div class="grid">
 
-            {% for i in range(30) %}
-            <input type="number"
-            step="any"
-            name="feature{{i}}"
-            placeholder="Feature {{i+1}}"
-            required>
-            {% endfor %}
+                <input type="number" step="any"
+                name="f1"
+                placeholder="Time"
+                required>
+
+                <input type="number" step="any"
+                name="f2"
+                placeholder="V1"
+                required>
+
+                <input type="number" step="any"
+                name="f3"
+                placeholder="V2"
+                required>
+
+                <input type="number" step="any"
+                name="f4"
+                placeholder="V3"
+                required>
+
+                <input type="number" step="any"
+                name="f5"
+                placeholder="V4"
+                required>
+
+                <input type="number" step="any"
+                name="f6"
+                placeholder="V5"
+                required>
+
+                <input type="number" step="any"
+                name="f7"
+                placeholder="V6"
+                required>
+
+                <input type="number" step="any"
+                name="f8"
+                placeholder="V7"
+                required>
+
+                <input type="number" step="any"
+                name="f9"
+                placeholder="V8"
+                required>
+
+                <input type="number" step="any"
+                name="f10"
+                placeholder="V9"
+                required>
+
+                <input type="number" step="any"
+                name="f11"
+                placeholder="V10"
+                required>
+
+                <input type="number" step="any"
+                name="f12"
+                placeholder="V11"
+                required>
+
+                <input type="number" step="any"
+                name="f13"
+                placeholder="V12"
+                required>
+
+                <input type="number" step="any"
+                name="f14"
+                placeholder="V13"
+                required>
+
+                <input type="number" step="any"
+                name="f15"
+                placeholder="V14"
+                required>
+
+                <input type="number" step="any"
+                name="f16"
+                placeholder="V15"
+                required>
+
+                <input type="number" step="any"
+                name="f17"
+                placeholder="V16"
+                required>
+
+                <input type="number" step="any"
+                name="f18"
+                placeholder="V17"
+                required>
+
+                <input type="number" step="any"
+                name="f19"
+                placeholder="V18"
+                required>
+
+                <input type="number" step="any"
+                name="f20"
+                placeholder="V19"
+                required>
+
+                <input type="number" step="any"
+                name="f21"
+                placeholder="V20"
+                required>
+
+                <input type="number" step="any"
+                name="f22"
+                placeholder="V21"
+                required>
+
+                <input type="number" step="any"
+                name="f23"
+                placeholder="V22"
+                required>
+
+                <input type="number" step="any"
+                name="f24"
+                placeholder="V23"
+                required>
+
+                <input type="number" step="any"
+                name="f25"
+                placeholder="V24"
+                required>
+
+                <input type="number" step="any"
+                name="f26"
+                placeholder="V25"
+                required>
+
+                <input type="number" step="any"
+                name="f27"
+                placeholder="V26"
+                required>
+
+                <input type="number" step="any"
+                name="f28"
+                placeholder="V27"
+                required>
+
+                <input type="number" step="any"
+                name="f29"
+                placeholder="V28"
+                required>
+
+                <input type="number" step="any"
+                name="f30"
+                placeholder="Amount"
+                required>
+
+            </div>
+
+            <button type="submit">
+                🚀 Detect Fraud
+            </button>
+
+        </form>
+
+        {% if prediction %}
+
+        <div class="result
+        {% if 'Fraud' in prediction %}
+        fraud
+        {% else %}
+        safe
+        {% endif %}">
+
+            <h2>
+                {{ prediction }}
+            </h2>
 
         </div>
 
-        <button type="submit">
-            Detect Fraud
-=======
-<div class="container">
-
-    <h1>💳 Credit Card Fraud Detection</h1>
-
-    <p>Enter transaction details to detect fraud</p>
-
-    <form action="/predict" method="post">
-
-        <div class="grid">
-
-            <input type="text" name="f1" placeholder="Time" required>
-            <input type="text" name="f2" placeholder="V1" required>
-            <input type="text" name="f3" placeholder="V2" required>
-            <input type="text" name="f4" placeholder="V3" required>
-            <input type="text" name="f5" placeholder="V4" required>
-            <input type="text" name="f6" placeholder="V5" required>
-            <input type="text" name="f7" placeholder="V6" required>
-            <input type="text" name="f8" placeholder="V7" required>
-            <input type="text" name="f9" placeholder="V8" required>
-            <input type="text" name="f10" placeholder="V9" required>
-
-            <input type="text" name="f11" placeholder="V10" required>
-            <input type="text" name="f12" placeholder="V11" required>
-            <input type="text" name="f13" placeholder="V12" required>
-            <input type="text" name="f14" placeholder="V13" required>
-            <input type="text" name="f15" placeholder="V14" required>
-            <input type="text" name="f16" placeholder="V15" required>
-            <input type="text" name="f17" placeholder="V16" required>
-            <input type="text" name="f18" placeholder="V17" required>
-            <input type="text" name="f19" placeholder="V18" required>
-            <input type="text" name="f20" placeholder="V19" required>
-
-            <input type="text" name="f21" placeholder="V20" required>
-            <input type="text" name="f22" placeholder="V21" required>
-            <input type="text" name="f23" placeholder="V22" required>
-            <input type="text" name="f24" placeholder="V23" required>
-            <input type="text" name="f25" placeholder="V24" required>
-            <input type="text" name="f26" placeholder="V25" required>
-            <input type="text" name="f27" placeholder="V26" required>
-            <input type="text" name="f28" placeholder="V27" required>
-            <input type="text" name="f29" placeholder="V28" required>
-            <input type="text" name="f30" placeholder="Amount" required>
-
-        </div>
-
-        <button class="btn" type="submit">
-            Predict Transaction
->>>>>>> cd408b816c5053fdd2338cb63fa69678ba308022
-        </button>
-
-    </form>
-
-<<<<<<< HEAD
-    {% if prediction %}
-
-    <div class="result
-    {% if 'Fraud' in prediction %}
-    fraud
-    {% else %}
-    safe
-    {% endif %}">
-
-        <h2>{{ prediction }}</h2>
+        {% endif %}
 
     </div>
-
-    {% endif %}
-=======
-{% if prediction_text %}
-<div class="result-card">
-    {{ prediction_text }}
-</div>
-{% endif %}
->>>>>>> cd408b816c5053fdd2338cb63fa69678ba308022
-
-</div>
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> cd408b816c5053fdd2338cb63fa69678ba308022
